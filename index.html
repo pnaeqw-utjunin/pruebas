@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <!-- Este es un ejemplo de cómo insertar audio en un botón utilizando JavaScript -->
+
+<!-- Primero, se crea un botón normal con una etiqueta <button> -->
+<button id="my-button">Reproducir audio</button>
+
+<!-- A continuación, se agrega un elemento <audio> que contiene el archivo de audio que se desea reproducir -->
+<audio id="my-audio" src="descargas/audios/how old are you.mp3"></audio>
+
+<!-- Por último, se agrega un bloque de código JavaScript que asigna un controlador de eventos al botón -->
+<script>
+  // Primero, se obtiene una referencia al botón y al elemento <audio>
+  var button = document.getElementById('my-button');
+  var audio = document.getElementById('my-audio');
+
+  // Luego, se asigna un controlador de eventos al botón que reproducirá el audio cuando se haga clic en él
+  button.addEventListener('click', function() {
+    audio.play();
+  });
+</script>
+
+</body>
+</html>
